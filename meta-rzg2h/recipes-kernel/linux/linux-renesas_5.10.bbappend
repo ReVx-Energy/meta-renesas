@@ -29,6 +29,11 @@ SRC_URI_append = " \
 	file://bluetooth.cfg \
 "
 
+SRC_URI_append = " \
+	file://hdmi_patches/0001-drm-rcar-du-Fix-PHY-configure-registers.patch \
+	file://hdmi_patches/0002-drm-bridge-adv7511-allow-support-interlaced-mode.patch \
+"
+
 FIRMWARE_DIR = "${STAGING_KERNEL_DIR}/drivers/base/firmware_loader/builtin"
 do_download_firmware () {
        install -m 755 ${WORKDIR}/r8a779x_usb3_v*.dlmem ${FIRMWARE_DIR}
