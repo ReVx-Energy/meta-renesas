@@ -6,13 +6,13 @@ BBPATH = "${TOPDIR}"
 BBFILES ?= ""
 
 BBLAYERS ?= " \
-  ${TOPDIR}/../meta-gplv2 \
-  ${TOPDIR}/../poky/meta \
-  ${TOPDIR}/../poky/meta-poky \
-  ${TOPDIR}/../poky/meta-yocto-bsp \
-  ${TOPDIR}/../meta-renesas/meta-rz-common \
-  ${TOPDIR}/../meta-renesas/meta-rzg2h \
-  ${TOPDIR}/../meta-openembedded/meta-oe \
-  ${TOPDIR}/../meta-openembedded/meta-python \
-  ${TOPDIR}/../meta-openembedded/meta-multimedia \
+  ${TOPDIR}/../sources/meta-gplv2 \
+  ${TOPDIR}/../sources/poky/meta \
+  ${TOPDIR}/../sources/poky/meta-poky \
+  ${TOPDIR}/../sources/poky/meta-yocto-bsp \
+  ${TOPDIR}/../sources/meta-renesas/meta-rz-common \
+  ${TOPDIR}/../sources/meta-renesas/meta-rzg2h \
+  ${TOPDIR}/../sources/meta-openembedded/meta-oe \
+  ${TOPDIR}/../sources/meta-openembedded/meta-python \
+  ${TOPDIR}/../sources/meta-openembedded/meta-multimedia \
   "
